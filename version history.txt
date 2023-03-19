@@ -1,0 +1,8 @@
+v7.
+https://mis2021ab.herokuapp.com/callback
+v7b
+https://bots.dialogflow.com/line/92b956c5-6c71-4c75-b5fe-b0d623a3a60a/webhook
+
+HRdd
+
+heroku git:clone -a mis2021ab

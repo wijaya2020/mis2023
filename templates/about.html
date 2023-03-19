@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Qinghao Profile</title>
+
+		<style type="text/css">
+		* { 
+			font-family: "標楷體"; }
+
+		header { 
+			font-size: 36px;
+			color: #55ff55; }
+		.col-lg-4 {
+      		border: 1px solid; }
+	
+		</style>
+		
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script>
+		$(document).ready(function(){
+		$("#I").hover(function(){
+			$("#PICTURE").attr("src","/static/images/me.jpg");
+		});
+
+		$("#PU").hover(function(){
+			$("#PICTURE").attr("src","/static/images/pu.jpg");
+		});
+
+		$("#CSIM").hover(function(){
+			$("#PICTURE").attr("src","/static/images/pucsim.jpg");
+		});
+
+		$("#PICTURE").click(function(){
+			$("#PICTURE").hide();
+			$("#PICTURE").fadeIn("slow")
+		});
+		});
+	</script>
+
+</head>
+<body>
+	
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+		<a class="navbar-brand" href="#">MENU</a>
+					
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#aboutme">關於我</a></li>
+				<li class="nav-item"><a class="nav-link" href="#course">修課</a></li>
+				<li class="nav-item"><a class="nav-link" href="#youtube">推薦影片</a></li>
+			</ul>
+		</div>
+    </nav>
+
+
+	<main class="container-fluid bg-primary text-white text-center">
+
+		<nav>
+			<h1><a href="https://wijaya181028.wixsite.com/wijaya"
+			class="text-reset text-decoration-none text-white bg-primary" target="_blank" id="I"
+>清昊 Qinghao </a> </h1>
+
+			<h2><a href="https://www.pu.edu.tw/"
+			class="text-reset text-decoration-none text-white bg-primary" id="PU">靜宜大學 </a></h2>
+			<h2><a href="https://csim.pu.edu.tw/"
+			class="text-reset text-decoration-none text-white bg-primary" id="CSIM">資訊管理系 三A </a> </h2>
+		</nav>
+
+		<img src="/static/images/me.jpg" alt="照片" width="800" height="600" class="img-fluid rounded-circle" id="PICTURE"> 
+
+		<br><br><br>
+ 
+        <div class="row">
+			<session id="aboutme" class="col-lg-4"
+> 
+				<header> About Me </header>
+				<h3> 學號：410930201 </h3>
+				<h3> mobile phone: <a href="tel:0901201508"
+					class="text-reset text-decoration-none text-white bg-info">0901-201-508 </a></h3>
+				<h3> E-Mail: <a href="mailto:s1093020@gm.pu.edu.tw"
+					class="text-reset text-decoration-none text-white bg-info">s1093020@gm.pu.edu.tw </a> </h3>
+
+			</session>
+		
+    
+			<article id="course" class="col-lg-4"
+	>
+				<header> Course </header>
+				<h3>MIS</h3>
+				<h3>Management</h3>
+				<h3>System Analyst</h3>
+				<h3>ERP</h3>
+				
+			</article>
+
+			<aside id="youtube" class="col-lg-4"
+	>
+				<header> Recommend Video </header>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe src="https://www.youtube.com/embed/AhAJ6J01R7w" allowfullscreen 
+					class="embed-responsive-item">></iframe>
+				</div>
+
+				<br>
+
+			</aside>
+		</div>
+		
+		<br><br><br><br><br><br><br><br><br>
+		<?php
+			echo "The time is " . date("h:i:sa");
+		?>
+
+		<footer>
+			Copyright © <?php echo date("Y-m-d");?> 清昊. All Rights Reserved.
+		</footer>
+	</main>
+
+</body>
+</html>

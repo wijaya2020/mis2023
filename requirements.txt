@@ -1,0 +1,9 @@
+flask
+gunicorn
+firebase_admin
+requests
+bs4
+APScheduler
+line-bot-sdk
+pytz
+

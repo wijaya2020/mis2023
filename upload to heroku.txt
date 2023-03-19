@@ -1,0 +1,12 @@
+git add .
+git commit -am "make it better"
+git push heroku master
+
+
+(if error you can try this method :) 
+git push -f heroku master (force commit)
+
+tracing error:
+heroku logs --tail
+
+

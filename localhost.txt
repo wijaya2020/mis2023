@@ -1,5 +1,0 @@
-至瀏覽器輸入： http://127.0.0.1:5000/
-或是 http://localhost:5000/ 
-
-
-https://www1.pu.edu.tw/~s1093020/mis2a/html-1.php

@@ -1,3 +1,23 @@
+1. git init
+2. git remote add origin git remote add origin 
+https://wijaya2020@github.com/wijaya2020/mis2023.git
+(Please change wijaya2020 to your own git account, and mis2ac to your repository name )
+3. git add .
+4. git commit -am "version 1: first upload"
+5. git push origin master
+
+
+if error :
+git config --global user.email "wijaya181028@gmail.com"
+(change "wijaya181028@gmail.com"  with your github email)
+git config --global user.name  "wijaya2020"
+(change "wijaya2020"  with your github name)
+
+and then choose access token > input your personal access token
+
+--------------
+
+--------------------------------------------
 git add .
 git commit -am "make it better"
 git push heroku master

@@ -1,1 +1,5 @@
 flask
+firebase_admin
+requests
+bs4
+line-bot-sdk

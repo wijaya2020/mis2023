@@ -1,4 +1,5 @@
 flask
+gunicorn
 firebase_admin
 requests
 bs4
